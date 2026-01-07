@@ -8,12 +8,6 @@ namespace GameStore.Api.Endpoints
     
     public static class GamesEndpoints
     {
-        private static readonly List<GameSummaryDto> games = [
-            new GameSummaryDto(1, "The Legend of Code", "Adventure", 59.99m, new DateTime(2023, 11, 15)),
-            new GameSummaryDto(2, "Debugging Quest", "RPG", 49.99m, new DateTime(2024, 2, 20)),
-            new GameSummaryDto(3, "Refactor Racer", "Racing", 39.99m, new DateTime(2024, 5, 10))
-        ];
-
         public static void MapGamesEndpoints(this WebApplication app)
         {
             var group = app.MapGroup("/games");
